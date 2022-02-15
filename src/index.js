@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { AppProvider } from './component/api';
+import '@fortawesome/fontawesome-free/css/all.css'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <AppProvider>
     <App />
-  </React.StrictMode>,
+  </AppProvider>,
   document.getElementById('root')
 );
 
