@@ -1,6 +1,6 @@
 # 程式架構
 
-![image]](./chamber.PNG)
+![image]](https://github.com/BoJyun/chamber/blob/master/chamber.PNG)
 
 
 # Getting Started with Create React App
