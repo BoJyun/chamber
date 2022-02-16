@@ -1,8 +1,3 @@
-# 程式架構
-
-![img](https://github.com/BoJyun/chamber/blob/master/chamber.PNG)
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
