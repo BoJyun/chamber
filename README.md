@@ -1,5 +1,5 @@
 # 程式架構
-![chamber]](./chamber.png)
+![IMG]](./chamber.PNG)
 
 
 # Getting Started with Create React App
