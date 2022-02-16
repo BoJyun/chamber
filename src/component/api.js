@@ -92,6 +92,28 @@ const AppProvider = ({ children }) => {
         return data;
     }
 
+    const fetchQuit=async (chamber,num)=>{
+        let data=null
+
+        try{
+            const response=await axios({
+                method:"GET",
+                url:"http://127.0.0.1:8000/chamber/chamberapi/api/quit?chamber="+chamber+"&LineNum="+num,
+                headers:{
+                    "COntent-Type":"application/json",
+                    "Accept":"application/json",
+                },
+            })
+
+            data=response.data;
+
+        }catch(error){
+            Notification('error', error.message);
+        }
+
+        return data;
+    }
+
     return (
         <AppContext.Provider
             value={{
@@ -99,6 +121,7 @@ const AppProvider = ({ children }) => {
                 fetchWhiteboard,
                 fetchInprocess,
                 fetchAllBU,
+                fetchQuit,
             }}
         >{children}
         </AppContext.Provider>

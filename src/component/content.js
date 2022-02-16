@@ -112,7 +112,7 @@ const AppContent=(props)=>{
             <div style={{height:"700px"}}>
                 <Headwhiteboard mylabel={chamber}/>
                 <InProcess user={user} NeUser={NeUser}/>
-                <Reservation line={line} cutLine={cutline}/>
+                <Reservation line={line} cutLine={cutline} chamber={chamber}/>
                 <FormLayoutDemo onSuccess={initialize} chamber={chamber}/>
             </div>
             {/* <div style={{marginTop:"10px"}}>
